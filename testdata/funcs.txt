@@ -3,3 +3,4 @@
 {{ "https://github.com" | mdlink "download" }}
 {{ "1000" | number }}
 {{ "ABC" | base64 }}
+{{ "[\"hey\"]" | escape }}

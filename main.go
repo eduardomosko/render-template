@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"encoding/base64"
+	"encoding/json"
 	"errors"
 	"fmt"
 	"log"
@@ -142,6 +143,10 @@ var funcMap = template.FuncMap{
 	},
 	"base64": func(in string) string {
 		return base64.StdEncoding.EncodeToString([]byte(in))
+	},
+	"escape": func (in string) string {
+		s, _ := json.Marshal(in)
+		return string(s[1:len(s)-1])
 	},
 }
 

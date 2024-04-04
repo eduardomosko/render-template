@@ -153,7 +153,7 @@ func TestRenderTemplate(t *testing.T) {
 				"time": time.Date(2023, time.August, 6, 15, 8, 28, 0, time.UTC),
 			},
 			nil,
-			"06 Aug 2023 11:08:28\n06 Aug 2023 11:08:28\n[download](https://github.com)\n1,000\nQUJD\n",
+			"06 Aug 2023 11:08:28\n06 Aug 2023 11:08:28\n[download](https://github.com)\n1,000\nQUJD\n[\\\"hey\\\"]\n",
 		},
 	}
 
